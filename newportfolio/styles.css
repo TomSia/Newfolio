@@ -1,0 +1,291 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(48,48,48);
+    color: white;
+    font-family: Bahnschrift Semibold;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: 11;
+}
+#logo {
+    width: 300px;
+    height: 100px;
+    z-index: 20;
+    position: absolute;
+    background-image: url(newlogo.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul {
+    float:right;
+    margin-right: 10%;
+}
+
+li {
+    float:left;
+    padding: 20px 0px 10px 0px;
+    margin-right: 60px;
+    text-decoration: none;
+    list-style-type: none;
+}
+#welcome {
+    width: 60%;
+    height: 70vh;
+    text-align: center;
+    top: 15vh;
+    left: 20%;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+    background-image: url(welcome\ stuff.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: 90%;
+    background-position-y: 30%;
+}
+
+#oinfo {
+    height: 20vh;
+    width: 5%;
+    margin-top: -16%;
+    
+}
+
+#sdown {
+    width: 5%;
+    height: 20vh;
+    right: 0;
+    margin-top: 8%;
+    margin-right: 5%;
+    background-image: url(scroll.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    position: fixed;
+}
+
+#sdown:hover {
+    cursor: pointer;
+}
+
+#cute {
+    width: 10%;
+    height: 2vh;
+    margin-top: 18%;
+    margin-left: 10%;
+    border-bottom: white 2px solid;
+    text-align: center;
+}
+
+h1 {
+    font-size: 120px;
+    margin-top: 23%;
+    line-height: 100px;
+    z-index: 1;
+}
+
+img {
+    margin-left: 30%;
+}
+
+#s1 {
+    border-left: 5px rgb(210, 191, 31) solid;
+    height: 3vh;
+    margin-left: 50%;
+}
+
+#s2 {
+    border-left: 5px rgb(210, 191, 31) solid;
+    height: 3vh;
+    margin-left: 50%;
+}
+
+p {
+    font-size: 11px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#start {
+    width: 100%;
+    height: 100vh;
+}
+
+#work {
+    width: 100%;
+    height: 100vh;
+
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+}
+
+#back {
+    position: relative;
+    bottom: 10px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: rgb(210, 191, 31);
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(210, 191, 31);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#domain {
+    color: white;
+}
+
+#domain:hover {
+    cursor: pointer;
+}
+
+.deathani {
+    animation: death 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.aliveani {
+    animation: death 2s ease-in;
+}
+
+@keyframes death{
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes expansion {
+    0% {
+        color: white;
+    }
+    100% {
+        color: rgb(210, 191, 31);
+    }
+}
+
+.domain-text {
+    animation: expansion 3s ease-in-out infinite alternate;
+}
+
+#dexpansion {
+    display: none;
+}
+
+video {
+    margin-left: 10%;
+    margin-top: 14vh;
+}
+
+#aboutom {
+    width: 30%;
+    height: 80vh;
+    margin-right: 10%;
+    margin-top: 10vh;
+    float: right;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(210, 191, 31);
+}
+
+h3 {
+    font-size: 80px;
+    margin: 0;
+    padding-top: 10vh;
+    padding-left: 100px;
+    float: left;
+}
+
+#projects {
+    width: 100%;
+    height: 100vh;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#disp1 {
+    width: 900px;
+    height: 500px;
+    border: 5px white solid;
+    position: relative;
+    left: 250px;
+    top: 220px;
+    background-color: rgb(48,48,48);
+    z-index: 10;
+    float: left;
+    background-image: url("ext1.PNG");
+    background-size: 100%;
+}
+
+#disp2 {
+    height: 800px;
+    width: 370px;
+    border: 5px white solid;
+    position: relative;
+    top: 10vh;
+    left: 1170px;
+    background-color: rgb(255, 255, 255);
+    background-image: url("ext2.png");
+    background-size: 100%;
+}
+
+#head {
+    font-size: 40px;
+    position: absolute;
+    left: 600px;
+    bottom: -25vh;
+    animation: expansion 3s ease-in-out infinite alternate;
+}
+
+#disp1:hover {
+    transform: scale(1.1)
+}
+
+#disp2:hover {
+    z-index: 20;
+    transform: scale(1.1);
+}
